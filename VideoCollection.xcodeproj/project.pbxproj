@@ -13,6 +13,14 @@
 		CE553987242913AC009A2E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE553985242913AC009A2E73 /* Main.storyboard */; };
 		CE553989242913B1009A2E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE553988242913B1009A2E73 /* Assets.xcassets */; };
 		CE55398C242913B1009A2E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55398A242913B1009A2E73 /* LaunchScreen.storyboard */; };
+		CE55399424291C95009A2E73 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55399324291C95009A2E73 /* Video.swift */; };
+		CE55399624291DFD009A2E73 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55399524291DFD009A2E73 /* CollectionViewCell.swift */; };
+		CED569E7242A357100EDF426 /* Moscow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E1242A356500EDF426 /* Moscow.mp4 */; };
+		CED569E8242A357100EDF426 /* Dubai.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E2242A356800EDF426 /* Dubai.mp4 */; };
+		CED569E9242A357100EDF426 /* Tokyo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E3242A356B00EDF426 /* Tokyo.mp4 */; };
+		CED569EA242A357100EDF426 /* Chicago.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E4242A356D00EDF426 /* Chicago.mp4 */; };
+		CED569EB242A357100EDF426 /* Singapur.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E5242A357000EDF426 /* Singapur.mp4 */; };
+		CED569EC242A357100EDF426 /* London.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED569E6242A357100EDF426 /* London.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		CE553988242913B1009A2E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE55398B242913B1009A2E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE55398D242913B1009A2E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE55399324291C95009A2E73 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		CE55399524291DFD009A2E73 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CED569E1242A356500EDF426 /* Moscow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Moscow.mp4; sourceTree = "<group>"; };
+		CED569E2242A356800EDF426 /* Dubai.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dubai.mp4; sourceTree = "<group>"; };
+		CED569E3242A356B00EDF426 /* Tokyo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tokyo.mp4; sourceTree = "<group>"; };
+		CED569E4242A356D00EDF426 /* Chicago.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chicago.mp4; sourceTree = "<group>"; };
+		CED569E5242A357000EDF426 /* Singapur.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Singapur.mp4; sourceTree = "<group>"; };
+		CED569E6242A357100EDF426 /* London.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = London.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +73,54 @@
 			isa = PBXGroup;
 			children = (
 				CE55397F242913AC009A2E73 /* AppDelegate.swift */,
-				CE553981242913AC009A2E73 /* SceneDelegate.swift */,
-				CE553983242913AC009A2E73 /* ViewController.swift */,
-				CE553985242913AC009A2E73 /* Main.storyboard */,
+				CED569F0242A36CF00EDF426 /* Controller */,
+				CED569EF242A361E00EDF426 /* Model */,
+				CED569ED242A35C700EDF426 /* Videos */,
+				CED569EE242A361000EDF426 /* View */,
 				CE553988242913B1009A2E73 /* Assets.xcassets */,
-				CE55398A242913B1009A2E73 /* LaunchScreen.storyboard */,
 				CE55398D242913B1009A2E73 /* Info.plist */,
 			);
 			path = VideoCollection;
+			sourceTree = "<group>";
+		};
+		CED569ED242A35C700EDF426 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CED569E4242A356D00EDF426 /* Chicago.mp4 */,
+				CED569E2242A356800EDF426 /* Dubai.mp4 */,
+				CED569E6242A357100EDF426 /* London.mp4 */,
+				CED569E1242A356500EDF426 /* Moscow.mp4 */,
+				CED569E5242A357000EDF426 /* Singapur.mp4 */,
+				CED569E3242A356B00EDF426 /* Tokyo.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		CED569EE242A361000EDF426 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE553981242913AC009A2E73 /* SceneDelegate.swift */,
+				CE55399524291DFD009A2E73 /* CollectionViewCell.swift */,
+				CE553985242913AC009A2E73 /* Main.storyboard */,
+				CE55398A242913B1009A2E73 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED569EF242A361E00EDF426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE55399324291C95009A2E73 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED569F0242A36CF00EDF426 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE553983242913AC009A2E73 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +181,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED569E9242A357100EDF426 /* Tokyo.mp4 in Resources */,
 				CE55398C242913B1009A2E73 /* LaunchScreen.storyboard in Resources */,
+				CED569EA242A357100EDF426 /* Chicago.mp4 in Resources */,
+				CED569E7242A357100EDF426 /* Moscow.mp4 in Resources */,
+				CED569EB242A357100EDF426 /* Singapur.mp4 in Resources */,
+				CED569EC242A357100EDF426 /* London.mp4 in Resources */,
+				CED569E8242A357100EDF426 /* Dubai.mp4 in Resources */,
 				CE553989242913B1009A2E73 /* Assets.xcassets in Resources */,
 				CE553987242913AC009A2E73 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55399624291DFD009A2E73 /* CollectionViewCell.swift in Sources */,
 				CE553984242913AC009A2E73 /* ViewController.swift in Sources */,
+				CE55399424291C95009A2E73 /* Video.swift in Sources */,
 				CE553980242913AC009A2E73 /* AppDelegate.swift in Sources */,
 				CE553982242913AC009A2E73 /* SceneDelegate.swift in Sources */,
 			);
