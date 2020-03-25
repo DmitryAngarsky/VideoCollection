@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tzJ-dr-bor">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="10" id="BV7-6z-2nb">
                                     <size key="itemSize" width="349" height="250"/>
@@ -85,12 +85,15 @@
                         <constraints>
                             <constraint firstItem="tzJ-dr-bor" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Mq-MD-gVO"/>
                             <constraint firstItem="tzJ-dr-bor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lcl-eq-plQ"/>
-                            <constraint firstItem="tzJ-dr-bor" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="sOU-8T-Dgi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tzJ-dr-bor" secondAttribute="bottom" constant="-34" id="pBj-Bu-buS"/>
                             <constraint firstItem="tzJ-dr-bor" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x9o-Xh-jvH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Team Wallie" id="s1m-WY-0Ul"/>
+                    <connections>
+                        <outlet property="collectionView" destination="tzJ-dr-bor" id="uPx-Lt-SYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
